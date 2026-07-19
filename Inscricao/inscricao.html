@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="inscricao.css">
+</head>
+<body>
+   <main>
+    <h1>Inscrição</h1>
+    <form id="form-cadastro">
+        <label>
+            Nome:
+            <input type="text" id="nome" name="nome" required>
+        </label>
+        <label>
+            E-mail:
+            <input type="email" id="email" name="email" required>
+        </label>
+        <button type="submit">Inscrever-se</button>
+    </form>
+
+    <div id="success-box" class="success-box hidden"></div>
+    <button type="button" id="voltar-home" class="back-button">Voltar para Tela Inicial</button>
+   </main>
+
+   <script src="inscricao.js"></script>
+    
+   
+    <footer>
+        <p>&copy; 2026 Eu Recomendo. Todos os direitos reservados.</p>
+        <p>Contato: carhporttes@gmail.com</p>
+    </footer>
+</body>
+</html>

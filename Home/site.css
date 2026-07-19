@@ -64,6 +64,22 @@ h1, h2 {
     padding: 20px 0;
 }
 
+button {
+    background-color: #6d27cf;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #5a1faa;
+    transform: translateY(-6px);
+}
+
 footer {
     background-color: #000000;
     color: #d8b4fe;
