@@ -33,6 +33,6 @@ if (form) {
 
 if (voltarBtn) {
   voltarBtn.addEventListener("click", function() {
-    window.location.href = "../Home/site.html";
+    window.location.href = "../Home/Site.html";
   });
 }
