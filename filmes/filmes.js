@@ -19,11 +19,15 @@ fetch(apiUrl)
                 ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
                 : "https://via.placeholder.com/500x750?text=Sem+imagem";
 
-            card.innerHTML = `
-                <img src="${posterUrl}" alt="${movie.title}">
-                <h3>${movie.title}</h3>
-                <p>${movie.overview || "Sinopse não disponível."}</p>
-            `;
+           card.innerHTML = `
+    <img src="${posterUrl}" alt="${movie.title}">
+    <div class="movie-info">
+    <h3>${movie.title}</h3>
+    <p><strong>⭐ Nota:</strong> ${movie.vote_average}</p>
+    <p><strong>📅 Lançamento:</strong> ${movie.release_date}</p>
+    <p>${movie.overview}</p>
+    </div>
+        `;
 
             container.appendChild(card);
         });

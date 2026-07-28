@@ -39,6 +39,7 @@ nav a:hover {
 }
 
 main {
+    flex: 1;
     max-width: 900px;
     width: min(92vw, 900px);
     margin: 24px auto 30px;
@@ -54,6 +55,10 @@ section {
     padding: 20px;
     border-radius: 8px;
     background-color: #232323;
+}
+
+section:last-child {
+    margin-bottom: 0;
 }
 
 h1, h2 {
@@ -89,11 +94,6 @@ footer {
     color: #d8b4fe;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
 }
 
 footer p {

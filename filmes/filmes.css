@@ -39,6 +39,7 @@ nav a:hover {
 }
 
 main {
+    flex: 1;
     max-width: 900px;
     width: min(92vw, 900px);
     margin: 24px auto 30px;
@@ -48,6 +49,36 @@ main {
     border-radius: 14px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
+.movie-card{
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #232323;
+    border-radius: 12px;
+}
+
+.movie-card img{
+    width: 220px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.movie-info{
+    flex: 1;
+}
+
+.movie-info h3{
+    margin-top: 0;
+    color: #fff;
+}
+
+.movie-info p{
+    text-align: justify;
+    line-height: 1.7;
+    color: #ccc;
+}
 
 
 section {
@@ -55,6 +86,10 @@ section {
     padding: 20px;
     border-radius: 8px;
     background-color: #232323;
+}
+
+section:last-child {
+    margin-bottom: 0;
 }
 
 h1, h2 {
@@ -67,11 +102,6 @@ footer {
     color: #d8b4fe;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
 }
 
 footer p {
